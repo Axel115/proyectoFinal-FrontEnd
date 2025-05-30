@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Kinder Feliz - Donde los niños aprenden jugando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+</head>
+<body>
+    <!-- Botón de volver arriba -->
+    <button id="btn-back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal Publicitario -->
+    <div id="modal-promo" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">X</span>
+            <h2>¡Inscripciones Abiertas!</h2>
+            <p>Aprovecha nuestro descuento del 20% en la primera mensualidad</p>
+            <button class="btn-modal">¡Inscribe Ahora!</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-child"></i>
+                <span>Mi Kinder Feliz</span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <!--Menu Mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero con Slider -->
+    <section id="inicio" class="hero parallax">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Bienvenidos a Mi Kinder Feliz</h1>
+                    <p>Donde cada niño descubre su potencial mientras juega y aprende</p>
+                    <button class="btn-primary">Conoce Más</button>
+                </div>
+                <div class="image-placeholder">
+                    <figure>
+                      <img src="img/slide1.avif" alt="">
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Educación de Calidad</h1>
+                    <p>Metodología innovadora que combina aprendizaje y diversión</p>
+                    <button class="btn-primary">Ver Programas</button>
+                </div>
+                <div class="image-placeholder">
+                    <figure>
+                        <img src="img/slide2.webp" alt="">
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Ambiente Seguro</h1>
+                    <p>Instalaciones diseñadas para el cuidado y desarrollo integral</p>
+                    <button class="btn-primary">Conocer Instalaciones</button>
+                </div>
+                <div class="image-placeholder">
+                    <figure>
+                        <img src="img/slide3.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-nav">
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+    </section>
+    <section class="video-section">
+        <div class="container">
+            <h2>Un día en nuestro kinder</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HjOOGujV-LU?si=jayVSftfR6txmDf3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <div class="geometric-shape triangle"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Con más de 15 años de experiencia, Mi Kinder Feliz es el lugar donde los niños desarrollan sus habilidades en un ambiente cálido y estimulante.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Cuidado personalizado</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Trabajo en equipo</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Desarrollo integral</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder with-filter">
+                        <img src="img/school.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <div class="geometric-shape circle"></div>
+            </div>
+            
+            <!-- Carousel de Servicios -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Arte y Creatividad</h3>
+                        <p>Desarrollamos la creatividad a través de actividades artísticas</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Música y Movimiento</h3>
+                        <p>Estimulamos el desarrollo motor y musical</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Lectoescritura</h3>
+                        <p>Preparación para el siguiente nivel educativo</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Huerto Escolar</h3>
+                        <p>Conexión con la naturaleza y responsabilidad</p>
+                    </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acordeón -->
+    <section class="accordion-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" data-target="#acc1">
+                        <h3>¿Cuáles son los horarios?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content" id="acc1">
+                        <p>Nuestros horarios son de 7:00 AM a 6:00 PM de lunes a viernes. También ofrecemos horario extendido previa solicitud.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header" data-target="#acc2">
+                        <h3>¿Qué edades aceptan?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content" id="acc2">
+                        <p>Recibimos niños desde los 2 hasta los 6 años de edad, organizados en grupos según su desarrollo y necesidades.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header" data-target="#acc3">
+                        <h3>¿Incluyen alimentación?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content" id="acc3">
+                        <p>Sí, incluimos desayuno, almuerzo y dos refrigerios nutritivos preparados por nuestro equipo de nutrición.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería</h2>
+                <div class="geometric-shape square"></div>
+            </div>
+            <div class="gallery-grid">
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery1.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery2.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery3.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery4.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery5.jpg" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <a href="#" class="gallery-item" data-fancybox="gallery">
+                    <div class="image-placeholder gallery-img">
+                        <figure>
+                            <img src="img/gallery6.jfif" alt="">
+                        </figure>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <div class="geometric-shape hexagon"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Calle Principal #123, Colonia Centro</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+52 999 123 4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@mikinderfeliz.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun - Vie: 7:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Envíanos un Mensaje</h3>
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Kinder Feliz</h3>
+                    <p>Formando el futuro de nuestros niños con amor y dedicación.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>AXEL RAUL CHAN EK-9SC</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
